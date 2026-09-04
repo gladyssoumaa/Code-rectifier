@@ -31,22 +31,22 @@ The agent operates as a continuous finite state machine managed by LangGraph:
 ### 1. Clone the Repository & Install Dependencies
 ```bash
 git clone https://github.com
-cd self-healing-devops-agent
+cd folder
 pip install -r requirements.txt
 ```
 
 ### 2. Configure Environment Variables
 Create a `.env` file in the root directory:
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
-TAVILY_API_KEY=your_search_api_key_here
-TARGET_WATCH_DIR=/path/to/your/development/folder
+OPENAI_API_KEY= my_api_key
+TAVILY_API_KEY= my_search_api_key
+TARGET_WATCH_DIR= my_local_folder
 ```
 
 ### 3. Run the Agent
 ```bash
 python main.py
 ```
-*Drop a broken Python script into your monitored directory, save it, and watch the terminal logs as the agent detects, searches, rewrites, and resolves the bug autonomously.*
+*Add a broken Python script into my monitored directory, save it, and watch the terminal logs as the agent detects, searches, rewrites, and resolves the bug automatically.*
 
 ---
