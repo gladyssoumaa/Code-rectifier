@@ -18,7 +18,7 @@ The agent operates as a continuous finite state machine managed by LangGraph:
 4. **Action:** The agent writes a calculated patch directly back to the local file.
 5. **Validation:** The loop reverts to Step 1. The assistant repeats this up to a hard stop threshold of 5 attempts before safety-aborting.
 
-## 🛠️ Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 * **Orchestration Framework:** `LangGraph` (State management & cyclical agent loops)
 * **File System Event Handler:** `Watchdog` (Asynchronous local directory observation)
@@ -26,7 +26,7 @@ The agent operates as a continuous finite state machine managed by LangGraph:
 * **Runtime Isolation:** Python `subprocess` (Environment execution & exit-code capture)
 * **Memory & State:** `LangGraph Memory Saver` (In-memory checkpointing for debugging histories)
 
-## 💻 Quick Start & Installation
+## Quick Start & Installation
 
 ### 1. Clone the Repository & Install Dependencies
 ```bash
